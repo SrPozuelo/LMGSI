@@ -1,0 +1,12 @@
+@font-face{
+    font-family: "Robot_Slab";
+    src: url(../fonts/Robot_Slab/static/RobotoSlab-Regular.ttf);
+}
+@font-face{
+    font-family:"Montserrat";
+    src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(../fonts/Merriweather/static/Merriweather-Regular.ttf);
+}

@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Encabezado{
+    position:fixed;
+    top:0;
+    background-color:#ec0000;
+    text-align:right;
+    color:azure;
+    display:flex;
+    align-items:center;
+    direction:row;
+    justify-content:space-evenly;
+    width:100%;
+}
+footer{
+    background-color:#ec0000;
+    padding:20px;
+    margin-top:20px;
+    text-align:center;
+    width:100%;
+    color:azure;
+    margin-top:158px;
+    #Nombre{
+        text-decoration:none;
+    }
+}
+figcaption{
+    color:#333;
+    /*border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;*/
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:5px;
+    width:150px;
+}
+h2{
+    position:fixed;
+    top:0;
+    margin-top:102px;
+    background-color:azure;
+    color:#333;
+    margin-bottom:20px;
+    text-align:center;
+    z-index:100;
+    width:100%;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+#Unidad1{
+    background-color:rgb(200,220,225);
+    height:200px;
+    width:100%;
+    margin-bottom:5px;
+    background-position:center,center;
+}
+#Unidad2{
+    background-color:rgb(200,220,225);
+    width:100%;
+    margin-bottom:10px;
+}
+#Unidad4{
+    background-color:rgb(200,220,225);
+    width:100%;
+    margin-bottom:10px;
+}
+body>div>div>h3{
+    text-align:center;
+    margin-top:257px;
+    z-index:400;
+    background-color:azure;
+}
+.Margen{
+    margin:0;
+    margin-top:10px;
+}
+#Unidad2{
+    #Principal{
+        display:flex;
+        align-items:center;
+        justify-content:space-evenly;
+    }
+}

@@ -1,0 +1,13 @@
+<xml version="1.0" encoding="UTF-8" ?>
+<rss>
+    <channel>
+        <title>Daw1 2024-2025</title>
+        <link>/dwa115</link>
+        <description>Las asignaturas de Daw1</description>
+        <item>
+            <title>Creación de la web.</title>
+            <link></link>
+            <description>Aquí va la descripción.</description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+Autor:Óscar Pozuelo Villamandos.
+Última modificación:18-10-2024.
+Descripción: Formulario sobre los juegos de mesa.
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Óscar Pozuelo Villamandos">
+        <meta name="generator" content="Html5">
+        <title>ud.03 Óscar Pozuelo Villamandos</title>
+        <link type="images/x-icon" rel="icon" href="../../media/favicon/favicon.ico">
+        <link href="../../CSS/estilos.css" rel="stylesheet" type="text/css" />
+        <link href="../../ud2/03/CSS/estilos.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1>Plantilla de formulario de juegos de mesa.</h1>
+        </header>
+        <form action="Resultados.php" method="get">
+            <fieldset>
+                <legend>Información Personal.</legend>
+                <label for="IdNombre">Nombre:</label>
+                <input type="text" name="nombre1" value="Introduzca el nombre." minlength="4" maxlength="20" id="IdNombre">
+                <label for="IdApellidos">Apellidos:</label>
+                <input type="text" name="apellidos1" value="Introduzca los apellidos." minlength="4" maxlength="20" id="IdApellidos">
+            </fieldset>
+            <fieldset>
+                <label for="Email">
+                    <input type="email" name="CorreoElectrónico" id="Email" maxlength="50" minlength="16" placeholder="Introduzca el correo Electrónico." pattern="^[A-Za-z0-9ñÑ._%+-]+@[A-Za-z0-9.-]+\.[a-zA-Z]{2,}$"  required>
+                </label>
+                <label>
+                    Introduzca un número de teléfono.
+                    <input type="tel" name="TeléfonoMovil" pattern="[0-9][-][+][(][)]{,9}">
+                </label>
+                <br>
+                <label for="IdContraseña">
+                    Introduzca una contraseña para el formulario:
+                    <input type="password" id="IdContraseña">
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="IdEdad">
+                    Introduzca la edad.
+                    <input type="number" id="IdEdad" min="1" max="130">
+                </label>
+            </fieldset>
+            <fieldset>
+                ¿Cuál es tu color favorito?
+                <label for="IdColor">
+                    <input type="color" id="IdColor" name="Color">
+                </label>
+            </fieldset>
+            <fieldset>
+                <p>Introduzca la fecha en la que realiza este formulario.</p>
+                <label for="IdFecha">
+                    <input type="date" name="FechaActual" id="IdFecha">
+                </label>
+                <p>Introduzca la hora en la que envía el formulario.</p>
+                <input type="time" name="Tiempo">
+                <br>
+                <label for="IdSemana">
+                    <input type="week" name="Semana" id="IdSemana">
+                </label>
+                <br>
+                <label for="IdMes">
+                    <input type="month" name="Mes" id="IdMes">
+                </label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Información extra.</legend>
+                <p>Elige el juego de mesa que prefieras:</p>
+                <label>
+                    <input type="radio" name="JuegoDeMesa" id="IdJuego1">
+                    Ajedrez.
+                </label>
+                <label>
+                    <input type="hidden" id="IdOculto" name="Ocultar" value="1234">
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="JuegoDeMesa" id="IdJuego2">
+                    Parchís.
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="JuegoDeMesa" id="IdJuego3">
+                    Poker.
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="JuegoDeMesa" id="IdJuego4">
+                    Damas.
+                </label>
+            </fieldset>
+            <fieldset>
+                <p>Elige los juegos de cartas que te gustan.</p>
+                <label>
+                    <input type="checkbox" name="JuegosDeMesa1" value="Escoba">
+                    Escoba
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="JuegosDeMesa2" value="Tute">
+                    Tute
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="JuegosDeMesa3" value="Chinchón">
+                    Chinchón
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="JuegosDeMesa4" value="Mus">
+                    Mus
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>¿Qué número de jugadores para un juego de mesa es el ideal para tí?</legend>
+                <label for="IDRango">
+                    <input type="range" name="Rango" id="IDRango" min="1" max="12" step="1">
+                </label>
+            </fieldset>
+            <br>
+           <fieldset> 
+                <label for="IdLista">¿Cuál es tu juego de mesa favorito?</label>
+                <input list="JuegoFavorito" name="Favorito" id="IdLista">
+                <datalist id="JuegoFavorito">
+                    <option value="Poker"></option>
+                    <option value="Mus"></option>
+                    <option value="Escoba"></option>
+                    <option value="Tute"></option>
+                    <option value="Chinchón"></option>
+                    <option value="Ajedrez"></option>
+                    <option value="Parchís"></option>
+                    <option value="Damas"></option>
+                </datalist>
+            </fieldset>
+            <br>
+            <fieldset>
+                Los juegos de mesa que más te gustan son los
+                <select name="TiposDeJugos">
+                    <option value="Estrategia">de estrategia</option>
+                    <option value="Cooperativos">cooperativos</option>
+                    <option value="Solitario">solitarios</option>
+                    <option value="Familiar">familiares</option>
+                </select>
+            </fieldset>
+            <br>
+            <textarea name="Conclusiones" rows="4" cols="20" placeholder="Escribe lo que opinas sobre este formulario."></textarea>
+            <br>
+            <fieldset>
+                <legend>Buscadores web</legend>
+                <label for="IdBuscador">
+                    Por palabras clave->
+                    <input type="search" id="IdBuscador">
+                </label>
+                <label for="IdURL">
+                    Por dirección web->
+                    <input type="url" id="IdURL">
+                </label>
+            </fieldset>
+            <br>
+            <label>
+                Suba un archivo.
+                <input type="file" id="IdArchivos" name="Archivo">
+            </label>
+            <br>
+            <input type="image" src="images/BotonDeEnviar.PNG" width="60" height="30" alt="Enviar">
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear">
+        </form>
+        <footer>
+            <p>2024-25 IES LOS SAUCES.&#169;Todos los derechos reservados. Óscar Pozuelo Villamandos y fue modificado por ultima vez el <time datetime="2024-10-18">18-10-2024.</time></p>
+        </footer>
+    </body>
+</html>

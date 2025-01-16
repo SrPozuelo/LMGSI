@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "03.dtd">
+<programmingLanguages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
+    <lenguaje name="Python">
+        <description>Descripción: Python es un lenguaje de programación interpretado, de alto nivel y de propósito general.</description>
+        <example>
+            <![CDATA[
+                Ejemplo:
+                def saludo():
+                    print("¡Hola, Mundo!")
+                saludo()
+            ]]>
+        </example>
+    </lenguaje>
+    <lenguaje name="JavaScript">
+        <description>Descripción: JavaScript es un lenguaje de programación que se utiliza para crear contenido dinámico en la web.</description>
+        <example>
+            <![CDATA[
+                Ejemplo:
+                function saludo() {
+                    alert("¡Hola, Mundo!");
+                }
+                saludo();
+            ]]>
+        </example>
+    </lenguaje>
+</programmingLanguages>

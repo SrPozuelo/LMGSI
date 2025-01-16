@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!--Declaración de elemento complejo: tipoLenguaje.-->
+    <xs:complexType name="tipoLenguaje">
+        <xs:sequence>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="example" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+    <!--Declaración del elemento raíz.-->
+    <xs:element name="programmingLanguages">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="lenguaje" type="tipoLenguaje" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

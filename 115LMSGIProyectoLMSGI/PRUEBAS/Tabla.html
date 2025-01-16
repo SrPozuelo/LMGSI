@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Práctica de tablas.</title>
+        <style> 
+            table{border: 1px solid black;}
+            td,th{border: 1px solid orange;}
+            caption{color: orange;}
+        </style>
+    </head>
+    <body>
+        <article>
+            <h2>Tabla1.</h2>
+            <table>
+                <caption>
+                    Tabla de ejemplo.
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Mes</th>
+                        <th>Precipitación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Enero</th>
+                        <th>23,5</th>
+                    </tr>
+                    <tr>
+                        <th>Febrero</th>
+                        <th>7,5</th>
+                    </tr>
+                    <tr>
+                        <th>Marzo</th>
+                        <th>82</th>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>113</th>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Tabla2.</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Celda</th>
+                        <th>Celda</th>
+                        <th>Celda</th>
+                        <th>Celda</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Celda Cs2</th>
+                        <th>Celda</th>
+                        <th>Celda</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Celda Cs3</th>
+                        <th>Celda</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Celda Cs4</th>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Tabla3.</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Celda</th>
+                        <th rowspan="2">Celda Rs2</th>
+                        <th rowspan="3">Celda Rs3</th>
+                        <th rowspan="4">Celda Rs4</th>
+                    </tr>
+                    <tr>
+                        <th>Celda</th>
+                    </tr>
+                    <tr>
+                        <th>Celda</th>
+                        <th>Celda</th>
+                    </tr>
+                    <tr>
+                        <th>Celda</th>
+                        <th>Celda</th>
+                        <th>Celda</th>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Tabla4.</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th colspan="2" rowspan="2">Celda Cs2 Rs2</th>
+                        <th>Celda</th>
+                    </tr>
+                    <tr>
+                        <th>Celda</th>
+                    </tr>
+                    <tr>
+                        <th>Celda</th>
+                        <th>Celda</th>
+                        <th>Celda</th>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </body>
+</html>

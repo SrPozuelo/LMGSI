@@ -1,0 +1,3 @@
+<!ELEMENT example (#PCDATA)>
+<!ATTLIST programmingLanguages xmlns:xsi CDATA #IMPLIED
+xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
