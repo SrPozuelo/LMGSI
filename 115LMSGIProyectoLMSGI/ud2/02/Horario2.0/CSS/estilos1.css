@@ -139,54 +139,63 @@ td[colspan="5"]{
 #Horario{
     position:absolute;
     top:25%;
-    left:25%;
-    z-index:9;
+    left:22.5%;
+    width:50%;
+    z-index:1;
 }
 #LMSGI{
     position:absolute;
     top:30%;
-    left:25%;
-    z-index:8;
+    left:22.5%;
+    width:50%;
+    z-index:2;
 }
 #BD{
     position:absolute;
     top:35%;
-    left:25%;
-    z-index:7
+    left:22.5%;
+    width:50%;
+    z-index:3;
 }
 #Programación{
     position:absolute;
     top:40%;
-    left:25%;
-    z-index:6;
+    left:22.5%;
+    width:50%;
+    z-index:4;
 }
 #Entorno{
     position:absolute;
     top:45%;
-    left:25%;
+    left:22.5%;
+    width:50%;
     z-index:5;
 }
 #Sistemas{
     position:absolute;
     top:50%;
-    left:25%;
-    z-index:4;
+    left:22.5%;
+    width:50%;
+    z-index:6;
 }
 #IPE{
     position:absolute;
     top:55%;
-    left:25%;
-    z-index:3;
+    left:22.5%;
+    width:50%;
+    z-index:7;
 }
 #Optativa{
     position:absolute;
     top:60%;
-    left:25%;
-    z-index:2;
+    left:22.5%;
+    width:50%;
+    z-index:8;
 }
 #Inglés{
     position:absolute;
     top:65%;
-    left:25%;
-    z-index:1;
+    left:22.5%;
+    width:50%;
+    z-index:9;
 }

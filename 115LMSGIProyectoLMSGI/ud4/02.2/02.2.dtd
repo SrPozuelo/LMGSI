@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?> 
-    <!ELEMENT biblioteca (libro+)> 
+    <!ELEMENT biblioteca (libro+)>
+    <!ATTLIST biblioteca xmlns:xsi CDATA #IMPLIED xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
     <!ELEMENT libro (titulo, autores, anio)> 
     <!ELEMENT titulo (#PCDATA)> 
     <!ELEMENT autores (autor+)> 

@@ -1,3 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT programmingLanguages (lenguaje)+>
+<!ELEMENT lenguaje (description,example)>
 <!ELEMENT example (#PCDATA)>
-<!ATTLIST programmingLanguages xmlns:xsi CDATA #IMPLIED
-xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST lenguaje name CDATA #REQUIRED>
+<!ATTLIST programmingLanguages xmlns:xsi CDATA #IMPLIED xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

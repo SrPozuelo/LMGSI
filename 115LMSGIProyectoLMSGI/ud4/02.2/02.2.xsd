@@ -1,27 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:complexType name="tipoLibro">
         <xs:sequence>
-            <xs:element name="titulo" type="xs:String"/>
+            <xs:element name="titulo" type="xs:string"/>
             <xs:element name="autores" type="tipoAutores"/>
-            <xs:element name="titulo" type="xs:gYear"/>
+            <xs:element name="anio" type="xs:gYear"/>
         </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="genero" type="xs:string" use="optional"/>
+        <xs:attribute name="idioma" type="xs:string" default="Español"/>
+        <xs:attribute name="formato" default="impreso"/>
+        <xs:attribute name="referencia" type="xs:string"/>
     </xs:complexType>
-    <xs:attribute name="id" type="xs:ID" use="required"/>
-    <xs:attribute name="genero" type="xs:string" use="optional"/>
-    <xs:attribute name="idioma" type="xs:string" default="Español"/>
-    <xs:attribute name="formato" default="impreso"/>
     <xs:complexType name="tipoAutores">
         <xs:sequence>
             <xs:element name="autor" type="tipoAutor" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-
+    <xs:complexType name="tipoAutor">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="apellido" type="xs:string"/>
+            <xs:element name="nacionalidad" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
     <xs:element name="biblioteca">
-        <xs:complextType>
+        <xs:complexType>
             <xs:sequence>
                 <xs:element name="libro" type="tipoLibro" maxOccurs="unbounded"/>
             </xs:sequence>
-        </xs:complextType>
+        </xs:complexType>
     </xs:element>
 </xs:schema>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE biblioteca SYSTEM "03.dtd">
+<!DOCTYPE programmingLanguages SYSTEM "03.dtd">
 <programmingLanguages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
     <lenguaje name="Python">
         <description>Descripción: Python es un lenguaje de programación interpretado, de alto nivel y de propósito general.</description>
@@ -21,6 +21,45 @@
                     alert("¡Hola, Mundo!");
                 }
                 saludo();
+            ]]>
+        </example>
+    </lenguaje>
+    <lenguaje name="Java">
+        <description>Descripción: Java es un lenguaje de programación de propósito general que es ampliamente utilizado en aplicaciones empresariales y móviles.</description>
+        <example>
+            <![CDATA[
+                public class Saludo {
+                    public static void main(String[] args) {
+                        System.out.println("¡Hola, Mundo!");
+                    }
+                }
+            ]]>
+        </example>
+    </lenguaje>
+    <lenguaje name="C++">
+        <description>Descripción: C++ es un lenguaje de programación de propósito general, conocido por su eficiencia y uso en aplicaciones de alto rendimiento.</description>
+        <example>
+            <![CDATA[
+                #include <iostream>
+                using namespace std;
+
+                int main() {
+                    cout << "¡Hola, Mundo!" << endl;
+                    return 0;
+                }
+            ]]>
+        </example>
+    </lenguaje>
+    <lenguaje name="Ruby">
+        <description>Descripción: Ruby es un lenguaje de programación dinámico y de alto nivel, conocido por su sintaxis simple y elegante.</description>
+        <example>
+            <![CDATA[
+                Ejemplo:
+                def saludo
+                    puts "¡Hola, Mundo!"
+                end
+
+                saludo
             ]]>
         </example>
     </lenguaje>
