@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mail [
-    <!ELEMENT destinatario (#PCDATA)+>
-    <!ELEMENT dia(#PCDATA)>
-    <!ELEMENT asunto(#PCDATA)?>
-    <!ELEMENT mensaje(#PCDATA|p|strong|h2|h3|ul|li)*>
-    <!ELEMENT nombre(#PCDATA)>
-    <!ELEMENT tipo(#PCDATA)>
-    <!ELEMENT mail(remitente,destinatarios,fechaDelMensaje,asunto,mensaje,fichero)>
-    <!ELEMENT destinatarios(destinatario)>
-    <!ELEMENT fechaDelMensaje(dia,mes,año)>
-    <!ELEMENT fichero(nombre,tipo)>
+    <!ELEMENT remitente (#PCDATA)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT año (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT mensaje (#PCDATA|p|strong|h2|h3|ul|li)*>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT mail (remitente,destinatarios,fechaDelMensaje,asunto?,mensaje,fichero)>
+    <!ELEMENT destinatarios (destinatario+)>
+    <!ELEMENT fechaDelMensaje (dia,mes,año)>
+    <!ELEMENT fichero (nombre,tipo)>
 ]>
 <!--
 Nombre:Óscar Pozuelo Villamandos.

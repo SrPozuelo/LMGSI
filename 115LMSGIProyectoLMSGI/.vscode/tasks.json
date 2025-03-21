@@ -1,0 +1,160 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "xslt",
+			"label": "xslt: Universidad(T)",
+			"saxonJar": "${config:XSLT.tasks.saxonJar}",
+			"xsltFile": "${command:xslt-xpath.pickXsltFile}",
+			"xmlSource": "${command:xslt-xpath.pickXmlSourceFile}",
+			"resultPath": "${workspaceFolder}/ud5/02/target/index.html",
+			"allowSyntaxExtensions40": "off",
+			"messageEscaping": "adaptive",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$saxon-xslt"
+			]
+		},
+		{
+			"type": "xslt",
+			"label": "xslt: Tikets",
+			"saxonJar": "${config:XSLT.tasks.saxonJar}",
+			"xsltFile": "${workspaceFolder}/ud5/03/src/03.xsl",
+			"xmlSource": "${workspaceFolder}/ud5/03/input/03.xml",
+			"resultPath": "${workspaceFolder}/ud5/03/target/index.html",
+			"allowSyntaxExtensions40": "off",
+			"messageEscaping": "adaptive",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$saxon-xslt"
+			]
+		},
+		{
+			"type": "xslt",
+			"label": "xslt: Cuestionario",
+			"saxonJar": "${config:XSLT.tasks.saxonJar}",
+			"xsltFile": "${workspaceFolder}/ud5/04/src/04.xsl",
+			"xmlSource": "${workspaceFolder}/ud5/04/input/test 1.xml",
+			"resultPath": "${workspaceFolder}/ud5/04/target/index.html",
+			"allowSyntaxExtensions40": "off",
+			"messageEscaping": "adaptive",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$saxon-xslt"
+			],
+			"parameters": [
+                {
+                    "name":"corregido",
+                    "value": "si"
+                }
+            ]
+		},
+		{
+			"type": "xslt",
+			"label": "xslt: Usuarios",
+			"saxonJar": "${config:XSLT.tasks.saxonJar}",
+			"xsltFile": "${workspaceFolder}/ud5/05/src/05.xsl",
+			"xmlSource": "${workspaceFolder}/ud5/05/input/05.xml",
+			"resultPath": "${workspaceFolder}/ud5/05/target/index.xml",
+			"allowSyntaxExtensions40": "off",
+			"messageEscaping": "adaptive",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$saxon-xslt"
+			]
+		},
+		{
+			"type": "xslt",
+			"label": "xslt: Ethernets",
+			"saxonJar": "${config:XSLT.tasks.saxonJar}",
+			"xsltFile": "${workspaceFolder}/ud5/06/src/06.xsl",
+			"xmlSource": "${workspaceFolder}/ud5/06/input/06.xml",
+			"resultPath": "${workspaceFolder}/ud5/06/target/index.yaml",
+			"allowSyntaxExtensions40": "off",
+			"messageEscaping": "adaptive",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$saxon-xslt"
+			]
+		},
+		{
+			"type": "xslt",
+			"label": "xslt: Predicciones",
+			"saxonJar": "${config:XSLT.tasks.saxonJar}",
+			"xsltFile": "${workspaceFolder}/ud5/07/src/07.xsl",
+			"xmlSource": "${workspaceFolder}/ud5/07/input/prediccion.xml",
+			"resultPath": "${workspaceFolder}/ud5/07/target/index.html",
+			"allowSyntaxExtensions40": "off",
+			"messageEscaping": "adaptive",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$saxon-xslt"
+			]
+		},
+		{
+			"type": "xslt",
+			"label": "xslt: Pedidos",
+			"saxonJar": "${config:XSLT.tasks.saxonJar}",
+			"xsltFile": "${workspaceFolder}/examen/03/src/pedido.xsl",
+			"xmlSource": "${workspaceFolder}/examen/03/input/pedido.xml",
+			"resultPath": "${workspaceFolder}/examen/03/target/index.html",
+			"allowSyntaxExtensions40": "off",
+			"messageEscaping": "adaptive",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$saxon-xslt"
+			]
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+XSL -> command:xslt-xpath.pickXsltFile
+XML ->command:xslt-xpath.pickXmlSourceFile
+*/

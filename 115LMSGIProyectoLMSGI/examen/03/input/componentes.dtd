@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT componentes (componente+)>
+<!ELEMENT componente (#PCDATA)>
+<!ATTLIST componente codigo ID #REQUIRED>
+<!ATTLIST componente nombre CDATA #REQUIRED>

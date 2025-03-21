@@ -1,0 +1,21 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body { font-family: Arial, sans-serif; margin: 20px; padding: 10px; }
+thead{
+    background-color: #c79999;
+}
+th{
+    border: solid black 1px;
+    padding:10px;
+}
+td{
+    border: solid black 1px;
+}
+.Fabricante{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width:600px;
+}
